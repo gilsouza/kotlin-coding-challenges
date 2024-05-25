@@ -1,6 +1,5 @@
 package com.igorwojda.range.containsrange
 
-import org.amshove.kluent.`should contain all`
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
