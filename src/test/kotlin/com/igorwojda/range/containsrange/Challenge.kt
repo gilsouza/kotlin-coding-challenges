@@ -1,11 +1,12 @@
 package com.igorwojda.range.containsrange
 
+import org.amshove.kluent.`should contain all`
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun containsRange(range1: IntRange, range2: IntRange): Boolean {
-    TODO("Add your solution here")
-}
+private fun containsRange(range1: IntRange, range2: IntRange) =
+    range2.first >= range1.first && range2.last <= range1.last
+
 
 private class Test {
     @Test

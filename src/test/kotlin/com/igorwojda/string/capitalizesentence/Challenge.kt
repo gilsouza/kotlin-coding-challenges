@@ -3,9 +3,11 @@ package com.igorwojda.string.capitalizesentence
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-private fun capitalizeSentence(str: String): String {
-    TODO("Add your solution here")
-}
+private fun capitalizeSentence(str: String) =
+    str.split(' ')
+        .joinToString(separator = " ") {
+            string -> string.replaceFirstChar { char -> char.uppercaseChar() }
+        }
 
 private class Test {
     @Test
